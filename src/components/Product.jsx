@@ -1,5 +1,5 @@
 
-import {useDispatch , useSelector , shallowEqual} from 'react-redux';
+import {useDispatch} from 'react-redux';
 import { isPicked } from '../features/redux/slices/products';
 import { addItem } from '../features/redux/slices/cart';
 import  React  , {useCallback} from 'react'
