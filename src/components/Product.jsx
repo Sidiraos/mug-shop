@@ -27,7 +27,7 @@ const Product = ({ product }) => {
 		<div className="bg-slate-200 rounded p-4 flex flex-col gap-4 justify-between text-black">
 			<div className="card-img h-64 bg-white">
 				<img
-					src={`/images/${img}.png`}
+					src={`/mug-shop/images/${img}.png`}
 					className="h-full w-full object-cover"
 					alt={title}
 				/>

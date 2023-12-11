@@ -26,7 +26,7 @@ const CartItem = ({ item }) => {
 		<div className="flex max-[540px]:flex-col max-[540px]:gap-2 max-[540px]:border max-[540px]:border-slate-500/40 max-[540px]:p-4 justify-between">
 			<div className="flex gap-1 items-center">
 				<img
-					src={`/images/${item.img}.png`}
+					src={`/mug-shop/images/${item.img}.png`}
 					alt={item.title}
 					className="w-16 rounded-sm"
 				/>
