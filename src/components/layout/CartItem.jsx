@@ -19,7 +19,7 @@ const CartItem = ({item}) => {
   return (
     <div className='flex justify-between'>
     <div className='flex gap-1 items-center'>
-        <img src={`/public/images/${item.img}.png`} alt={item.title} className='w-16 rounded-sm' />
+        <img src={`/images/${item.img}.png`} alt={item.title} className='w-16 rounded-sm' />
         <p className='font-bold text-lg'>{item.title}</p>
     </div>
     <div className='flex gap-2 items-center'>
