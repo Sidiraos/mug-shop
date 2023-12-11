@@ -25,7 +25,7 @@ const Modal = ({ onClose }) => {
 				<Price />
 				<Button
 					text={'Proceed to checkout'}
-					specialClass={'self-center'}
+					specialClass={'mx-auto'}
 				/>
 			</div>
 		</div>

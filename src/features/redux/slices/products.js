@@ -27,7 +27,7 @@ const initialState = {
 export const getInventoryData = (action)=>{
     return (dispatch , getState) =>{
         dispatch(isLoading(true))
-        fetch('/data/inventory.json')
+        fetch('/mug-shop/data/inventory.json')
         .then(res => res.json())
         .then(data => {
             dispatch(isLoading(false))
