@@ -2,7 +2,6 @@ import React from 'react';
 import Button from './Button';
 import { useDispatch } from 'react-redux';
 import { setQty, removeItemFromCart } from '../../features/redux/slices/cart';
-import { isPicked } from '../../features/redux/slices/products';
 const CartItem = ({ item }) => {
 	// console.log("render item in cart" , item);
 	const dispatch = useDispatch();
@@ -19,7 +18,6 @@ const CartItem = ({ item }) => {
 
 	const handleClick = (e) => {
 		dispatch(removeItemFromCart(item.id));
-		dispatch(isPicked({ id: item.id, picked: false }));
 	};
 
 	return (

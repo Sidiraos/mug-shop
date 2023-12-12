@@ -1,17 +1,16 @@
 
 import {useDispatch} from 'react-redux';
-import { isPicked } from '../features/redux/slices/products';
 import { addItem } from '../features/redux/slices/cart';
 import  React  , {useCallback} from 'react'
 const Product = ({ product }) => {
     const dispatch = useDispatch()
 	const { title, price, img, picked, id } = product;
-    // console.log("le composant " + title + " est rendu" , product)
+    console.log("le composant " + title + " est rendu" , product)
 
     const pickItem = useCallback(() => {
         if(picked) return
         // console.log('added to cart')
-        dispatch(isPicked({id, picked: true}))
+        // dispatch(isPicked({id, picked: true}))
 		dispatch(addItem({
 			title,
 			price,

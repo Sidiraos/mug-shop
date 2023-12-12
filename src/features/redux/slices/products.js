@@ -22,6 +22,14 @@ const initialState = {
         isPicked : (state, action) => {
             state.products.find(product => product.id === action.payload.id).picked = action.payload.picked
         }
+    },
+    extraReducers: {
+        ['cart/addItem'] : (state, action) => {
+            state.products.find(product => product.id === action.payload.id).picked = true
+        },
+        ['cart/removeItemFromCart'] : (state, action) => {
+            state.products.find(product => product.id === action.payload).picked = false
+        }
     }
 })
 export const getInventoryData = (action)=>{
